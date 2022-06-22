@@ -12,7 +12,7 @@ public enum CameraType: Int {
 }
 
 // Camera Video Mgr
-public class CameraVideoMgr: NSObject {
+public class CameraVideoMgr: NSObject, ObservableObject {
     private let videoDataOutput = AVCaptureVideoDataOutput()
     private let videoDataOutputQueue = DispatchQueue(label: "VideoDataOutputQ",
                                                      qos: .userInitiated,
