@@ -5,7 +5,7 @@ public protocol CameraVideoMgrDelegate {
     func captureOutput(ciimg: CIImage)
 }
 
-//
+// 
 public enum CameraType: Int {
     case video = 0
     case photo = 1
